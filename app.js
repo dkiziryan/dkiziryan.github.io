@@ -3,8 +3,3 @@ var nflApp = angular.module('nflApp', ['nflApp.controller','nflApp.factory']).ru
     });
 
 nflApp.constant('NFL_URL', 'http://www.nfl.com/liveupdate/scorestrip/ss.xml');
-
-/*
-Notes:
-jscompress.com
-*/
