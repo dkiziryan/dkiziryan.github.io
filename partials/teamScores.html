@@ -1,0 +1,39 @@
+<div class="">
+  <div class="container">
+    <h1>NFL Scoreboard</h1>
+    <div ng-show="isError" class="errorDiv">
+      <span >{{errorMessage}}</span>
+    </div>
+
+    <div class="">      
+      <table class="table table-striped table-bordered table-hover table-condensed table-responsive col-sm-5">
+        <th>Day</th>
+        <th>Home Team</th>
+        <th>Score</th>
+        <th>Away Team</th>
+        <th>Score</th>
+        <tr ng-repeat="game in gameInfoList">
+          <td>
+            <span ng-bind="game._d"></span>
+          </td> 
+           <td>
+            <img ng-src="./assets/{{game._h}}.png">
+            <span ng-bind="game._h"></span>
+            <span ng-bind="game._hnn"></span>
+          </td>
+           <td>
+            <span ng-bind="game._hs"></span>
+          </td>
+           <td>
+            <img ng-src="./assets/{{game._v}}.png">
+            <span ng-bind="game._v"></span>
+            <span ng-bind="game._vnn"></span>
+          </td>
+          <td>
+            <span ng-bind="game._vs"></span>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
