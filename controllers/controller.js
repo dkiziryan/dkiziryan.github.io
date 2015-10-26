@@ -26,6 +26,8 @@ nflApp.controller('NflAppController',['$scope','$interval','GameInfoFactory', fu
     $scope.intervalPromise = $interval(function(){   
         console.log("intervalPromise");
         $scope.getGameData();
-    }, 15000);    
+    }, 15000);  
+
+
     
 }]);
