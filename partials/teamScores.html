@@ -1,11 +1,11 @@
 <div class="">
-  <div class="container-fluid">
+  <div class="container">
     <h1>NFL Scoreboard</h1>
     <div ng-show="isError" class="errorDiv">
       <span >{{errorMessage}}</span>
     </div>
 
-    <div>      
+    <div class="table-responsive">      
       <table class="table table-striped table-bordered table-hover table-condensed col-sm-5">
         <th>Day</th>
         <th>Home Team</th>
@@ -17,7 +17,7 @@
             <span ng-bind="game._d"></span>
           </td> 
            <td>
-            <img ng-src="./assets/{{game._h}}.png">
+            <img ng-src="./assets/{{game._h}}.png" class="img-responsive">
             <span ng-bind="game._h"></span>
             <span ng-bind="game._hnn"></span>
           </td>
@@ -25,7 +25,7 @@
             <span ng-bind="game._hs"></span>
           </td>
            <td>
-            <img ng-src="./assets/{{game._v}}.png">
+            <img ng-src="./assets/{{game._v}}.png" class="img-responsive">
             <span ng-bind="game._v"></span>
             <span ng-bind="game._vnn"></span>
           </td>
